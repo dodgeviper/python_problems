@@ -56,8 +56,6 @@ def count_words(s, n):
 			inorder_list.append(node.data)
 			fetch_list(node.right)
 	fetch_list(bst.root)
-	def sort_count(data):	w,c =data; return c;
-	#return sorted(inorder_list, reverse=True, key=sort_count)[:n]
 	return inorder_list[:n]
 	
 
